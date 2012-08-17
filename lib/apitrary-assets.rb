@@ -11,7 +11,7 @@ module ApitraryAssets
       require 'apitrary-assets/compass_functions'
       register_compass_extension
     elsif asset_pipeline?
-      require 'sass-rails' # See: https://github.com/thomas-mcdonald/bootstrap-sass/pull/4
+      require 'sass-rails'
       register_rails_engine
       require 'apitrary-assets/rails_functions'
     else
@@ -40,4 +40,4 @@ module ApitraryAssets
   end
 end
 
-Bootstrap.load!
+ApitraryAssets.load!
