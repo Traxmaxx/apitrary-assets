@@ -70,7 +70,7 @@ header nav[data-type="dropdown"] ul a:hover {
   color: #fff;
 }
 nav.help a {
-  background: url(<%= asset_path "apitrary/icons/help.png" %>) no-repeat left center;
+  background: url('/assets/icons/help.png') no-repeat left center;
   padding: 0 0 0 15px;
 }
 
