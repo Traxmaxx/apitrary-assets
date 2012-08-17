@@ -1,0 +1,8 @@
+@import "normalize";
+@import "mixins";
+@import "layout";
+
+//Import device specific stylesheets to solve stuff like hover-states and so on
+@import "devices/desktop";
+@import "devices/smartphone";
+@import "devices/tablet";

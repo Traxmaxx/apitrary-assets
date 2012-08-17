@@ -1,0 +1,13 @@
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  //Use :hover only for desktops to prevend a smartphone hover/toggle glitch
+  header nav[data-type="dropdown"]:hover ul {display: inline-block;}
+  header nav.account:hover span:after {
+    @include nav-dropdown-arrow-hover;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
+}

@@ -1,0 +1,100 @@
+html {
+  height: 100%;
+  font: 62.5%/20pt "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+body {
+  color: #7b7d7e;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+a, a:hover, a:visited, a:active, a:focus {
+  color: #7b7d7e;
+  text-decoration: none;
+}
+header {
+  background: #edf1f2 url('/assets/logo.png') no-repeat 15px center;
+  border-bottom: 1px solid #242627;
+  border-top: 1px solid #fff;
+  height: 32px;
+  text-align: right;
+}
+header nav {
+  border-left: 1px solid #d5d8d9;
+  display: inline-block;
+  height: 33px;
+  padding: 0 10px;
+  position: relative;
+  top: -1px;
+}
+header nav:last-child {
+  border-right: 1px solid #d5d8d9;
+  margin: 0 90px 0 0;
+}
+header nav span,
+header nav a:first-child {
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  line-height: 3.3rem;
+}
+header nav[data-type="dropdown"] ul {
+  background: #edf1f2;
+  border-bottom: 1px solid #d5d8d9;
+  border-left: 1px solid #d5d8d9;
+  border-right: 1px solid #d5d8d9;
+  display: none;
+  list-style: none;
+  left: 0px;
+  margin: 0 -1px;
+  padding: 1px 0 0 0;
+  position: absolute;
+  text-align: left;
+  top: 32px;
+  width: 100%;
+}
+header nav[data-type="dropdown"].toggled ul {
+  display: inline-block;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+header nav[data-type="dropdown"] ul a {
+  border-top: 1px solid #d5d8d9;
+  display: block;
+  padding: 0 10px;
+}
+header nav[data-type="dropdown"] ul a:hover {
+  background: #467e93;
+  color: #fff;
+}
+nav.help a {
+  background: url(<%= asset_path "apitrary/icons/help.png" %>) no-repeat left center;
+  padding: 0 0 0 15px;
+}
+
+nav.account span {padding: 0 11px 0 25px;}
+nav.account span:after {
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #4f5254;
+  border-right: 4px solid transparent;
+  border-top: 4px solid transparent;
+  content: '';
+  position: absolute;
+  right: 8px;
+  top: 12px;
+}
+nav.account.toggled span:after {
+  @include nav-dropdown-arrow-hover;
+}
+nav.account span img {
+  display: block;
+  left: 4px;
+  position: absolute;
+  top: 5px;
+}
+
+section.content {
+  background: #e2eaee;
+}
