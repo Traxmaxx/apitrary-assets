@@ -11,6 +11,18 @@ a, a:hover, a:visited, a:active, a:focus {
   color: #7b7d7e;
   text-decoration: none;
 }
+//Buttonlayout
+button {
+  background: #467e93;
+  border-top: 1px solid #7ea5b4;
+  border-bottom: 1px solid #335866;
+  border-left: 1px solid #335866;
+  border-right: 1px solid #335866;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 4px 9px 4px 6px;
+}
 header {
   background: #edf1f2 url('/assets/logo.png') no-repeat 15px center;
   border-bottom: 1px solid #242627;
