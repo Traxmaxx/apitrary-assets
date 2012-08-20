@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.name = "apitrary-assets"
   s.version = '0.01'
-  s.authors = ["Alexander Rösel"]
+  s.authors = ["Alexander Roesel"]
   s.email = 'ar@apitrary.com'
   s.summary = "Assets for the apitrary.com launchpad and kolay"
   s.homepage = "http://apitrary.com"
